@@ -6,6 +6,8 @@ import torch.nn.functional as F
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+# reference : https://pytorch.org/tutorials/intermediate/pruning_tutorial.html
+
 
 class LeNet(nn.Module):
     def __init__(self):
